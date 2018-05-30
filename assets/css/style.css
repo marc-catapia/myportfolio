@@ -119,6 +119,7 @@
 
 .accordion>.card>.card-header>.btn {
 	font-size: 2em;
+	
 }
 
 
@@ -177,10 +178,21 @@
 		margin-left: -125px;
 		text-align: center;
 	}
+
+	.myname {
+		font-size: 3em;
+		/*color: white;*/
+	}
+
+	.capstone-links {
+		text-align: center;
+		font-size: 20px;
+	}
 }	
 
 /*tablets*/
 @media only screen and (max-width: 768px) {
-
-
+	.accordion>.card>.card-header>.btn {
+		font-size: 1em;
+	}
 }	
