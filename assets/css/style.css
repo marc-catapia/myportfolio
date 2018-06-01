@@ -83,6 +83,7 @@
 	background-color: rgba(70, 125, 211, 0.7);
 	height: 10vh;
 	padding-top: 30px;
+	/*margin-top: 60px;*/
 }
 
 .capstone-links {
@@ -115,6 +116,7 @@
 #headingTools,
 #headingEmailLinks {
 	background-color: #57574C;
+	margin-bottom: 50px;
 } 
 
 .accordion>.card>.card-header>.btn {
@@ -122,7 +124,13 @@
 	
 }
 
+.card-text {
+	text-indent: 50px;
+}
 
+.copyright {
+	text-align: center;
+}
 
 
 
@@ -181,18 +189,24 @@
 
 	.myname {
 		font-size: 3em;
-		/*color: white;*/
+		color: #6C94B7;
 	}
 
 	.capstone-links {
 		text-align: center;
 		font-size: 20px;
 	}
+
 }	
 
 /*tablets*/
-@media only screen and (max-width: 768px) {
+@media (min-width:451px) and (max-width: 768px) {
 	.accordion>.card>.card-header>.btn {
 		font-size: 1em;
+	}
+
+	#mypic {
+		height: 50%;
+		width: 50%;
 	}
 }	
