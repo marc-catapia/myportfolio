@@ -1,191 +1,469 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>My Portfolio</title>
 
-	<!-- required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-
-	<title></title>
-
-	<!-- external stylesheet -->
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<!-- boostrap css -->	
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-	<!-- external font style -->
-	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
 <body>
-		<nav class="navbar mx-0" id="myportfolio">
-	  		<span class="navbar-brand" id="myPort">My Portfolio</span>
-		</nav>
-	<!-- <div class="container-fluid px-0" id="maincontainer"> -->
-	<div class="container-fluid" id="maincontainer">
+	<main id="topPage">
+		<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+		<a href="#topPage" id="myBtn" class="btn btn-elegant" title="Go to top"><i class="fas fa-arrow-alt-circle-up arrowUp"></i></a>
 
-
-	
-		<main class="main clearfix" id="mainpage">
-			<div class="row">
-				<div class="col-lg-4 col-12">
-					<!-- <div class="jumbotron"> -->
-						<div><img src="assets/images/me.jpg" id="mypic" img="fluid"></div>
-						<!-- <div><span class="myname">Marc P. Catapia</span></div> -->
-					<!-- </div>			 -->
-				</div>
-				<div class="col-lg-8 col-12">
-					<div><span class="myname">Marc Catapia</span></div>
-				</div>
-
-			</div>
-
-			<div class="row">
-				<div class="col-md-4 capstone-links">
-					<div class="list-group lstgrp">
-					  	<a href="https://marc-catapia.github.io/g4carwash/" class="list-group-item list-group-item-action active">Capstone 1</a>
-					  	<a href="#" class="list-group-item list-group-item-action">Capstone 2</a>
-					  	<a href="#" class="list-group-item list-group-item-action">Capstone 3</a>
+		<div class="container-fluid mainpart smooth-scroll">
+			<div class="row greetingPart">
+				<div class="col-md-7 offset-md-5">
+					<div class="blue-text text-center">
+						<p class="greeting">Hello there, I'm</p>
 					</div>
 				</div>
-
-				<div class="col-md-8">
-					<div class="card" id="aboutme">
-						<div class="card-header">About Me</div>
-						<div class="card-text">
-							Marc Catapia here, graduate of BS Computer Engineering at Bulacan State University. Currently, I am taking up the Web Development Bootcamp at TUITT. I am hoping to learn a lot from this course and hopefully to apply these knowledge when I got the web development job someday. As of this day I already learned a lot from the bootcamp like creating a responsive webpage where I was able to apply all the things that I learned. Feel free to checkout my project/s on the links and also everything that I already learned from the course.
-						</div>	
+			</div>
+			<div class="row">
+				<div class="col-md-7 offset-md-5">
+					<div class="marc mt-2">
+						<div class="row">
+							<div class="col-md-3 text-center">
+								<a href="#mySkills">
+									<p id="M">M</p>
+									<p class="menu white-text myName"><span class="blue-text">M</span>y Skills</p>
+								</a>
+							</div>
 						
+							<div class="col-md-3 text-center">
+								<a href="#aboutMe">
+									<p id="A">A</p>
+									<p class="menu white-text myName"><span class="blue-text">A</span>bout Me</p>
+								</a>
+							</div>
+							<div class="col-md-3 text-center">
+								<a href="#recentProject">
+									<p id="R">R</p>
+									<p class="menu white-text myName"><span class="blue-text">R</span>ecent Projects</p>
+								</a>
+							</div>
+							<div class="col-md-3 text-center">
+								<a href="#contactMe">	
+									<p id="C">C</p>
+									<p class="menu white-text myName"><span class="blue-text">C</span>ontact Me</p>
+								</a>
+							</div>		
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-4 offset-md-7">
+					<p class="blue-text webdev">Web Developer</p>
+				</div>
+			</div>	
+		</div>
+
+		<div class="container-fluid detailPart">
+			<div id="aboutMe" class="menuDetail">
+				<div class="row">
+					<div class="col-md-8 offset-md-2 text-center mt-5">
+						<p class="blockquote bq-warning card-header">About Me</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 offset-md-4 mt-3">
+						<div class="view zoom d-flex justify-content-center mb-2">
+							<img id="myImage" src="assets/images/me.jpg" alt="my picture">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 offset-md-3 text-center mb-3">
+						
+						<!-- Card -->
+						<div id="aboutMeCard" class="card">
+
+						  <!-- Card content -->
+						  <div class="card-body">
+
+						    <!-- Title -->
+						    <h4 class="card-title">Marc P. Catapia</h4>
+						    <hr>
+						    <!-- Text -->
+						    <p class="aboutMeContent">Marc Catapia here, graduate of BS Computer Engineering from Bulacan State University. I'm a mainframe application developer turned web developer. Being able to increase my skillset is a great opportunity for me. And being a mainframe application developer helped me a lot to easily understand everything that I need to learn in web developing. I am hoping to increase my knowledge in web development  by being part of a great team. Also, I am willing to share everything I learned not just in web development but also in other aspects I gained from my previous jobs.</p>
+						  </div>
+
+						</div>
+						<!-- Card -->
 					</div>	
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-8 offset-4">
-					<div class="row">
-						<div class="col-md-4 col-12">
-					
-							<div class="accordion" id="accordionSkills">
-								<div class="card">
-									<div class="card-header" id="headingSkills">
-										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Skills
-		        						</button>
+			<hr>
+			<div id="mySkills" class="menuDetail">
+				<div class="row">
+					<div class="col-md-8 offset-md-2 text-center mt-3">
+						<p class="blockquote bq-warning card-header">My Skills</p>
+					</div>
+				</div>
+				<div class="row">
+					<div id="mySkillDetail" class="col-md-12">	
+						<!-- <div class="jumbotron jumbotron-fluid grey accent-1 mt-3"> -->
+						<div class="jumbotron jumbotron-fluid blue-grey darken-4 mt-3">
+							<div class="row">
+								<div class="col-md-5 offset-md-1">
+									<!-- <div class="card"> -->
+										<p class="card-header text-center frontend">Front End</p>
+										<div class="progress mb-5">
+										  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="row">
+											<div class="col-md-3">
+												<img class="skillImage" src="assets/images/html5.png">	
+											</div>
+											<div class="col-md-9 mt-5">
+												<div class="progress">		
+												  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-2">
+											<div class="col-md-3">
+												<img class="skillImage" src="assets/images/css3.png">	
+											</div>
+											<div class="col-md-9 mt-5">
+												<div class="progress">		
+												  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-2">
+											<div class="col-md-3">
+												<img class="skillImage" src="assets/images/bootstrap.png">	
+											</div>
+											<div class="col-md-9 mt-5">
+												<div class="progress">		
+												  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-2">
+											<div class="col-md-3">
+												<img class="skillImage" src="assets/images/mdbootstrap.jpg">	
+											</div>
+											<div class="col-md-9 mt-5">
+												<div class="progress">		
+												  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+									<!-- </div> -->
+								</div>
+								<div class="col-md-5">
+									<!-- <div class="card"> -->
+										<p class="card-header text-center backend pb-2">Back End</p>
+										<div class="progress mb-5">
+										  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="row">
+											<div class="col-md-3">
+												<img class="skillImage" src="assets/images/php.png">	
+											</div>
+											<div class="col-md-9 mt-5">
+												<div class="progress">		
+												  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-2">
+											<div class="col-md-3">
+												<img class="skillImage" src="assets/images/laravel.png">	
+											</div>
+											<div class="col-md-9 mt-5">
+												<div class="progress">		
+												  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-2">
+											<div class="col-md-3">
+												<img class="skillImage" src="assets/images/javascript.png">	
+											</div>
+											<div class="col-md-9 mt-5">
+												<div class="progress">		
+												  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-2">
+											<div class="col-md-3">
+												<img class="skillImage" src="assets/images/jquery.png">	
+											</div>
+											<div class="col-md-9 mt-5">
+												<div class="progress">		
+												  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-2">
+											<div class="col-md-3">
+												<img class="skillImage" src="assets/images/mysql.png">	
+											</div>
+											<div class="col-md-9 mt-5">
+												<div class="progress">		
+												  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+										</div>
+									<!-- </div> -->
+								</div>
+							</div>
+							<div class="row mt-5">
+								<div class="col-md-6 offset-md-3">
+									<p class="card-header text-center backend pb-2">Others</p>
+									<div class="progress mb-5">
+									  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<div class="row mt-2">
+										<div class="col-md-3">
+											<img class="skillImage" src="assets/images/github.png">	
+										</div>
+										<div class="col-md-9 mt-5">
+											<div class="progress">		
+											  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+									</div>
+									<div class="row mt-2">
+										<div class="col-md-3">
+											<img class="skillImage" src="assets/images/gitlab.png">	
+										</div>
+										<div class="col-md-9 mt-5">
+											<div class="progress">		
+											  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<!-- <hr> -->
+			<div id="recentProject" class="menuDetail">
+				<div class="row">
+					<div class="col-md-6 offset-md-3 text-center mt-3">
+						<p class="blockquote bq-warning card-header">Recent Projects</p>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-md-4">
+						<!-- Card -->
+						<div class="card">
 
-								<div id="collapseOne" class="collapse" aria-labelledby="headingSkills" data-parent="#accordionSkills">
-									<div class="card-body">
-										<ul class="ullist">
-											<li>HTML</li>
-											<li>CSS</li>
-											<li>Bootstrap</li>
-										</ul>
+						  <!-- Card image -->
+						  <img class="card-img-top projectImage" src="assets/images/project1.png" alt="Card image project1">
+
+						  <!-- Card content -->
+						  <div class="card-body">
+
+						    <!-- Title -->
+						    <h4 class="card-title"><a href="https://marc-catapia.github.io/g4carwash/" target="_blank">G4 Carwash</a></h4>
+						    <!-- Text -->
+						    <p class="card-text textArea">This project is created to apply all the things that we learned on HTML and CSS. This static website is responsive to all devices. Inspired from our family business thus I created this website.</p>
+						    <!-- Button -->
+						    <a href="https://marc-catapia.github.io/g4carwash/" target="_blank" class="btn btn-primary">Visit</a>
+
+						  </div>
+
+						</div>
+						<!-- Card -->
+					</div>
+					<div class="col-md-4">
+						<!-- Card -->
+						<div class="card">
+
+						  <!-- Card image -->
+						  <img class="card-img-top projectImage" src="assets/images/project2.png" alt="Card image project2">
+
+						  <!-- Card content -->
+						  <div class="card-body">
+
+						    <!-- Title -->
+						    <h4 class="card-title"><a href="https://rare-auction.000webhostapp.com/" target="_blank">Rare Auction</a></h4>
+						    <!-- Text -->
+						    <p class="card-text textArea">This e-Commerce website is created using plain PHP programming. This is an auction website wherein users can bid for every items that he/she is interested in. Winning bidder is notified via email after the bidding period.</p>
+						    <!-- Button -->
+						    <a href="https://rare-auction.000webhostapp.com/" target="_blank" class="btn btn-primary">Visit</a>
+
+						  </div>
+
+						</div>
+						<!-- Card -->
+					</div>
+					<div class="col-md-4">
+						<!-- Card -->
+						<div class="card">
+
+						  <!-- Card image -->
+						  <img class="card-img-top projectImage" src="assets/images/project3.png" alt="Card image project3">
+
+						  <!-- Card content -->
+						  <div class="card-body">
+
+						    <!-- Title -->
+						    <h4 class="card-title"><a href="https://garactus.000webhostapp.com/" target="_blank">Garactus</a></h4>
+						    <!-- Text -->
+						    <p class="card-text textArea">This website is created using PHP Laravel framework. A blogsite for cactus lovers. Since my wife loves growing cactus thus I created this blogsite.</p>
+						    <!-- Button -->
+						    <a href="https://garactus.000webhostapp.com/" target="_blank" class="btn btn-primary">Visit</a>
+
+						  </div>
+
+						</div>
+						<!-- Card -->
+					</div>
+				</div>
+				<div class="row mt-3 pb-3">
+					<div class="col-md-4 offset-md-4">
+						<hr>
+						<p class="text-center">Javascript Game</p>
+						<hr>
+						<!-- Card -->
+						<div class="card">
+
+						  <!-- Card image -->
+						  <img class="card-img-top projectImage" src="assets/images/javascriptGame.png" alt="Card image game">
+
+						  <!-- Card content -->
+						  <div class="card-body">
+
+						    <!-- Title -->
+						    <h4 class="card-title"><a href="https://marc-catapia.github.io/javascript-game/surrender.html" target="_blank">Surrender</a></h4>
+						    <!-- Text -->
+						    <p class="card-text textArea">A game based on Javascript wherein the player must be able to guess the correct answer by providing the correct letter on every box which corresponds to the correct answer.</p>
+						    <!-- Button -->
+						    <a href="https://marc-catapia.github.io/javascript-game/surrender.html" target="_blank" class="btn btn-primary">Visit</a>
+
+						  </div>
+
+						</div>
+						<!-- Card -->
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div id="contactMe" class="menuDetail">
+				<div class="row mb-2">
+					<div class="col-md-6 offset-md-3 text-center mt-3">
+						<p class="blockquote bq-warning card-header">Contact Me</p>
+					</div>
+				</div>
+				<div class="row">
+					<div id="contactMeDetail" class="col-md-12">
+						<div class="jumbotron jumbotron-fluid blue-grey darken-4 mt-3 contactJumbotron">
+							<div class="row">
+								<div class="col-md-5 offset-md-1">
+									<h3 class="white-text text-center">You may contact me via</h3>
+									<hr>
+									<div class="row">
+										<div class="col-md-2 offset-md-2">
+											<i class="fab fa-facebook-square facebook contactImage"></i>
+										</div>
+										<div class="col-md-8 mt-2">
+											<h5 class="white-text">marCatapia@gmail.com</h5>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-2 offset-md-2">
+											<i class="fas fa-envelope gmail contactImage"></i>
+										</div>
+										<div class="col-md-8 mt-2">
+											<h5 class="white-text">marc.catapia@gmail.com</h5>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-2 offset-md-2">
+											<i class="fas fa-phone-square telephone contactImage"></i>
+										</div>
+										<div class="col-md-8 mt-2">
+											<h5 class="white-text">(+63) 933.4559.120</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<h3 class="white-text text-center">My Other Links</h3>
+									<hr>
+									<div class="row">
+										<div class="col-md-2 offset-md-3">
+											<i class="fab fa-github white-text contactImage"></i>
+										</div>
+										<div class="col-md-6 mt-2">
+											<h5 class="white-text">marc-catapia</h5>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-2 offset-md-3">
+											<i class="fab fa-gitlab contactImage gitlab"></i>
+										</div>
+										<div class="col-md-6 mt-2">
+											<h5 class="white-text">marc.catapia</h5>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>	
-
-						<div class="col-md-4 col-12">
-					
-							<div class="accordion" id="accordionTools">
-								<div class="card">
-									<div class="card-header" id="headingTools">
-										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Tools
-		        						</button>
-									</div>
-								</div>
-
-								<div id="collapseTwo" class="collapse" aria-labelledby="headingTools" data-parent="#accordionTools">
-									<div class="card-body">
-										<ul class="ullist">
-											<li>Sublime Text</li>
-											<li>Linux</li>
-											<li>Photoshop</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-12">
-					
-							<div class="accordion" id="accordionEmailLinks">
-								<div class="card">
-									<div class="card-header" id="headingEmailLinks">
-										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">Social Links
-		        						</button>
-									</div>
-								</div>
-
-								<div id="collapseThree" class="collapse" aria-labelledby="headingEmailLinks" data-parent="#accordionEmailLinks">
-									<div class="card-body">
-										<ul class="ullist">
-											<li><a href="https://gitlab.com/">Gitlab</a></li>
-											<li><a href="https://github.com/">Github</a></li>
-											<li><a href="https://facebook.com/">Facebook</a></li>
-											<li><a href="https://mail.google.com/">Gmail</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
-
 				</div>
-
-
 			</div>
-		</main> 
-
-	</div> <!-- end container -->
-	
-		<footer class="footer" id="footer">
-			<p class="copyright">&copy; Marc Catapia&trade; 2018</p>
-		</footer>
+		</div>
+	</main>
 
 
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/js/mdb.min.js"></script>
 
-	
+	<script type="text/javascript">
+		$('a[href*="#"]').on('click', function (e) {
+			e.preventDefault();
 
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 1000, 'linear');
+		});
 
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
 
+		function scrollFunction() {
+		    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+		        document.getElementById("myBtn").style.display = "block";
+		    } else {
+		        document.getElementById("myBtn").style.display = "none";
+		    }
+		}
 
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0;
+		    document.documentElement.scrollTop = 0;
+		}
 
+	</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- external custom js -->
-
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
-    <!-- external js -->
-    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
