@@ -54,7 +54,7 @@
 
 /* .menuDetail {
 	min-height: 60vh;
-} */
+} */126
 
 #myImage {
 	height: 70%;
@@ -97,7 +97,7 @@
 
 .textArea {
 /* 	min-height: 85px; */
-	min-height: 130px;
+	height: 130px;
 }
 
 .contactJumbotron {
